@@ -38,9 +38,14 @@ public:
 		for (int i=0;i<cnt;i++) {
 			if (i < cnt - 1)
 				copy_vec[i]->next = copy_vec[i+1];
+<<<<<<< Updated upstream
 			Node* random = vec[i]->random;
 			copy_vec[i]->random =
 				(vec[i]->random != nullptr) ? copy_vec[vec[i]->random->val] : nullptr;
+=======
+			copy_vec[i]->random =
+				copy_vec[vec[i]->random->val];
+>>>>>>> Stashed changes
 		}
 
 		return new_head;

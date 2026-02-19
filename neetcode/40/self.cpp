@@ -15,8 +15,13 @@ public:
 			cur->next = new ListNode(new_val);
 
 			cur = cur->next;
+<<<<<<< Updated upstream
 			l1 = next(l1);
 			l2 = next(l2);
+=======
+			l1 = l1->next;
+			l2 = l2->next;
+>>>>>>> Stashed changes
 		}
 
 		if (carry != 0) {
@@ -34,6 +39,7 @@ public:
 			return 0;
 		return l->val;
 	}
+<<<<<<< Updated upstream
 
 	ListNode* next(ListNode* l)
 	{
@@ -44,3 +50,6 @@ public:
 };
 
 
+=======
+};
+>>>>>>> Stashed changes
